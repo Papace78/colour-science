@@ -12,8 +12,8 @@ _This code was authored solely by me during a previous role. The project is no l
 
 - Modular algorithm design
 - Data preprocessing and validation
-- Scientific modeling and regression workflows
-- Structured documentation and pipeline clarity
+- Polynomial regression workflows
+- Structured documentation
 
 ## Algorithm Overview
 
