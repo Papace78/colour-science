@@ -21,6 +21,19 @@ The algorithm is structured as a sequential pipeline, where each module processe
 
 1. **spectrophotometer**: Reads, validates, and preprocesses the measurement CSVs.
 2. **spectral_distribution**: Applies Saunderson correction and interpolates reflectance data. Calculates Lab color values for comparison with predicted reflectances.
-3. **calibration**: Builds predictive models for pigment properties (K, S, K/S). Processes monochromes of individual pigments to calculate key variables (KX, SX, KX/SX) per concentration, and fits polynomial regression models for...
+3. **calibration**: Builds predictive models for pigment properties (K, S, K/S). Processes monochromes of individual pigments to calculate key variables (KX, SX, KX/SX) per concentration, and fits polynomial regression models forthese variables. The fitted models are later
+   used to predict reflectance based on pigment concentrations.
+4. **formulation**: This module utilizes the fitted models from the **calibration**
+   module to predict reflectance curves based on specific pigment concentrations. It
+   sums the prediction of individual pigment models to obtain the mixture properties
+   (Kmix, Smix, K/Smix) and uses the Kubelka-Munk two-constant approach to derive its
+   reflectance curve.
+5. **colour_matching**: The final module in the pipeline encapsulate the **formulation**
+   module to predict the pigment concentrations that best match a target reflectance
+   curve. This is done through optimization, minimizing the rmse between predicted and
+   true reflectance values.
 
-...
+For more in-depth review of eac...
+.
+.
+.
