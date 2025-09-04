@@ -1,6 +1,6 @@
 # Colour-Science
 
-An example of my code structure and documentation style from a now-defunct internal project. Code is truncated for confidentiality.
+An example of my code structure and documentation style of my work at startup Prose from a now-defund project. Code is truncated for confidentiality.
 
 ## Overview
 
