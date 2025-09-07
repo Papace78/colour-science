@@ -1,6 +1,6 @@
 # Colour-Science
 
-An example of my code structure and documentation style of my work at startup Prose from a now-defund project. Code is truncated for confidentiality.
+Example repo from my work at Prose (sanitized for confidentiality and proprietary parts omitted).
 
 ## Overview
 
